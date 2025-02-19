@@ -180,22 +180,22 @@
       <div class="testimonials-grid" id="testimonials-grid">
           <!-- Existing Testimonials -->
       <div class="testimonial">
-        <p>"Masibulele is a highly skilled and dedicated professional. His work on our network security project was exceptional."</p>
+        <p>"A talented developer with a strong ability to solve complex problems. Highly recommended!"</p>
         <p><strong>- Nkosikhona Cele</strong></p>
       </div>
       <div class="testimonial">
-        <p>"A talented developer with a strong ability to solve complex problems. Highly recommended!"</p>
+        <p>"Masibulele is a highly skilled and dedicated student. His work on our network security project was exceptional."</p>
         <p><strong>- Andiswa Roji</strong></p>
       </div>
     </div>
         <!-- Testimonials will be dynamically added here -->
-      <form id="testimonial-form">
+        <form id="testimonial-form" action="https://formspree.io/f/xyzklpva" method="POST">
         <textarea name="testimonial" placeholder="Write your testimonial here..." required></textarea>
         <button type="submit">Submit Testimonial</button>
       </form>
     </div>
   </section>
-
+  
   <!-- Contact Section -->
   <section id="contact">
     <div class="flex container">
@@ -219,7 +219,28 @@
       <p>&copy; 2023 Masibulele Madikane</p>
     </div>
   </footer>
+   <!-- Firebase and JavaScript -->
+   <script type="module">
+    // Import Firebase modules
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+    import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js";
 
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCVrn5Fz3mgFB800ld0eby0IwfRoB56KJg",
+      authDomain: "testamonial--approvals.firebaseapp.com",
+      databaseURL: "https://testamonial--approvals-default-rtdb.firebaseio.com",
+      projectId: "testamonial--approvals",
+      storageBucket: "testamonial--approvals.firebasestorage.app",
+      messagingSenderId: "264103725439",
+      appId: "1:264103725439:web:763adfb135f35241cf324a",
+      measurementId: "G-B2K8J6CGFL"
+    };
+ // Initialize Firebase
+ firebase.initializeApp(firebaseConfig);
+ const analytics = getAnalytics(app);
+ var testimonialformDB=firebase.database().ref("testimonial-form");
+</script>
   <script src="scripts.js"></script>
 </body>
 </html>
