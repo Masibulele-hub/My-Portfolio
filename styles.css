@@ -28,7 +28,7 @@ body {
 
 /* Navigation */
 nav {
-  background: #c21c1c;
+  background: #080808;
   color: #f5f1f1;
   padding: 10px 0;
   background-size: cover;
@@ -71,7 +71,7 @@ nav .nav-links a::after {
   transition: 0.5s;
 }
 nav .nav-links a:hover {
-  color: #2155af;
+  color: #ff004f;
 }
 
 /* Mobile Menu */
@@ -110,7 +110,7 @@ nav .nav-links a:hover {
 
 /* Home Section */
 header {
-  background: url('https://wallpaperaccess.com/full/6144273.jpg') no-repeat center center/cover;
+  background: url('https://wallpaperaccess.com/full/1338376.jpg') no-repeat center center/cover;
   position: relative;
   overflow: hidden;
   color: #fff;
